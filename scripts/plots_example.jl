@@ -39,5 +39,9 @@ function plotfreqs(string, title)
 	barplot(keyvec, countvec, title = title)
 end
 
-println(plotfreqs("dsafdsiofaosdfffffffdkskkkk", "Please Help"))
+# Test it out and see how much time it takes before and after compiling
+
+@time println(plotfreqs("dsafdsiofaosdfffffffdkskkkk", "Please Help"))
+
+@time println(plotfreqs("snoooobledydooblesjdkkkksh", "Interesting..."))
 
