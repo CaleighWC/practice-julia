@@ -1,3 +1,3 @@
 using Pkg
-Pkg.add("UnicodePlots")
+Pkg.add(["UnicodePlots", "BenchmarkTools", "StatsBase"])
 
