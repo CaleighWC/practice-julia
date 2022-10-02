@@ -30,3 +30,14 @@ println(s)
 plt = barplot(nucvec, numvec, title = "Nucleotide Counts")
 println(plt)
 
+# Turn this into function because I realized it should work for any string!
+
+function plotfreqs(string, title)
+	dict = countmap([c for c in string])
+	keyvec = collect(keys(dict))
+	countvec = [dict[i] for i in keyvec]
+	barplot(keyvec, countvec, title = title)
+end
+
+println(plotfreqs("dsafdsiofaosdfffffffdkskkkk", "Please Help"))
+
