@@ -1,8 +1,8 @@
 using UnicodePlots
 
-# Make bar plot of nucleotides in a sequence
+# Make bar plot of amounts of each family of TE in a RepeatModeler output
 
-## Get dictionary of values in sequence
+## Get dictionary to store counts of of each TE family in the RepeatModeler output
 
 using CSV
 using DataFrames
